@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadi Kashi - Traditional Pooja Items</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .appear {
+            animation: fadeIn 0.8s ease-out;
+        }
+        .float-anim {
+            animation: float 3s ease-in-out infinite;
+        }
+        .pulse-anim {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-['Poppins'] bg-gray-50 appear">
+    <!-- Header with Floating Icon -->
+    <header class="bg-gradient-to-r from-red-800 to-orange-600 text-white py-12 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center">
+                <i class="fas fa-dharmachakra float-anim text-4xl mr-4 text-yellow-300"></i>
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold">आदि काशी | Aadi Kashi</h1>
+                    <p class="text-lg md:text-xl mt-2">दिव्य सुगंध, शुद्ध आस्था | Divine Fragrance, Pure Faith</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 bg-yellow-500/80 text-white shadow-md z-50 glass-effect">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-center space-x-6">
+                <a href="#products" class="hover:text-red-800 transition-colors">
+                    <i class="fas fa-box-open mr-2"></i> Products
+                </a>
+                <a href="#contact" class="hover:text-red-800 transition-colors">
+                    <i class="fas fa-phone-alt mr-2"></i> Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-red-800 mb-12">हमारे उत्पाद | Our Products</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Cards with Pulse Animation -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center">
+                    <img src="loban.jpg" alt="Loban" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold">लोबान | Loban</h3>
+                    <button class="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-md transition-colors pulse-anim">
+                        <i class="fas fa-shopping-cart mr-2"></i> Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center">
+                    <img src="incense.jpg" alt="Incense Sticks" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold">अगरबत्ती | Incense</h3>
+                    <button class="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-md transition-colors pulse-anim">
+                        <i class="fas fa-shopping-cart mr-2"></i> Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center">
+                    <img src="pooja-items.jpg" alt="Pooja Items" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold">पूजा सामग्री | Pooja Items</h3>
+                    <button class="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-md transition-colors pulse-anim">
+                        <i class="fas fa-shopping-cart mr-2"></i> Buy Now
+                    </button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center">
+                    <img src="traditional.jpg" alt="Traditional Items" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold">पारंपरिक वस्तुएं | Traditional Items</h3>
+                    <button class="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg shadow-md transition-colors pulse-anim">
+                        <i class="fas fa-shopping-cart mr-2"></i> Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with WhatsApp -->
+    <section id="contact" class="py-16 bg-red-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">संपर्क करें | Contact Us</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Our Location</h3>
+                    <p class="mb-4">
+                        <i class="fas fa-map-marker-alt mr-2 text-yellow-300"></i>
+                        75 Raj Bharti House, Bhagwanpur, Varanasi
+                    </p>
+                    <p class="mb-6">
+                        <i class="fas fa-phone-alt mr-2 text-yellow-300"></i>
+                        WhatsApp: <a href="https://wa.me/919044322504" class="text-yellow-300 hover:underline">+91 90443 22504</a>
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Send Message via WhatsApp</h3>
+                    <form onsubmit="window.open('https://wa.me/919044322504?text=' + encodeURIComponent('Name: ' + this.name.value + '%0APhone: ' + (this.phone.value || 'Not provided') + '%0AMessage: ' + this.message.value), '_blank'); return false;">
+                        <input type="text" name="name" placeholder="Your Name" required 
+                               class="w-full p-2 mb-4 bg-red-700 border border-red-600 rounded placeholder-red-200">
+                        <input type="tel" name="phone" placeholder="Phone Number (Optional)" 
+                               class="w-full p-2 mb-4 bg-red-700 border border-red-600 rounded placeholder-red-200">
+                        <textarea name="message" placeholder="Your Message" required
+                                  class="w-full p-2 mb-4 bg-red-700 border border-red-600 rounded placeholder-red-200 h-32"></textarea>
+                        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg shadow transition-colors">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp पर भेजें
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map and Gallery -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="rounded-lg overflow-hidden shadow-lg h-64">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.506635410456!2d82.9918743150141!3d25.4502589837781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710053d0b5d!2sBanaras%20Hindu%20University!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"></iframe>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="loban.jpg" alt="Loban" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="incense.jpg" alt="Incense Sticks" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="pooja-items.jpg" alt="Pooja Items" class="w-full h-full object-cover">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="traditional.jpg" alt="Traditional Items" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Aadi Kashi. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Made with <i class="fas fa-heart text-red-500"></i> in Varanasi</p>
+        </div>
+    </footer>
+</body>
+</html>
